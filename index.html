@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="block1" id="block1">
+        <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sunt.</p>
+        <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sunt.</p>
+        <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sunt.</p>
+        <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sunt.</p>
+
+    </div>
+    <form name="f1">
+        <input type="button" value="edit" id="edit" style="background-color: rgb(0, 255, 0); border-color: rgb(255, 253, 254);">
+        <input type="button" value="style" id="style" style="background-color: rgb(212, 5, 5); border-color: rgb(255, 253, 254);">
+    </form>
+    <div class="block2" id="block2">
+        <div class="box1" id="box_edit" style="display: none;">
+            <form name="f2">
+                <textarea name="texta" id="textarea" cols="30" rows="10" id="textarea"></textarea>
+                <br>
+                <input type="button" value="add" id="add" style="background-color: rgb(253, 255, 255); border-color: rgb(161, 130, 145);">
+                <input type="button" value="save" id="save"  style="background-color: rgb(253, 255, 255); border-color: rgb(161, 130, 145);">
+            </form>
+
+        </div>
+        <div class="content_add" style="display:none" id="content_add">
+            <h2>Choose what you want:</h2>
+            <input type="radio" name="radio_select" id="radio_table">Table
+            <input type="radio" name="radio_select" id="radio_list">List
+            <div class="table_content" id="table_content" style="display:none">
+                <p>Count TR:
+                    <input type="text" id="count_TR" placeholder="Count TR:">
+                </p>
+                <p>Count TD:
+                    <input type="text" id="count_TD" placeholder="Count TD:">
+                </p>
+                <h2>Add style to your table:</h2>
+                <p>Widdth of Td:
+                    <input type="text" id="width_TD" placeholder="Width of TD:">
+                </p>
+                <p>Height of TD:
+                    <input type="text" id="height_TD" placeholder="Height of TD:">
+                </p>
+                <p>Width of border:
+                    <input type="text" id="width_border" placeholder="Width of border:">
+                </p>
+                <p>Type of border
+                    <select name="Type_of_border" id="type_border">
+                        <option value="solid">solid</option>
+                        <option value="dotted"> dotted</option>
+                        <option value="double">double</option>
+                        <option value="groove">groove</option>
+                    </select> </p>
+                <p>Color of border
+                    <select name="Color_of_border" id="color_border">
+                        <option value="red"></option>
+                        <option value="black"> black</option>
+                        <option value="blue">blue</option>
+                        <option value="orange">orange</option>
+                        <option value="green">green</option>
+                    </select>
+                </p>
+                <input type="button" id="button_create" value="create table">
+            </div>
+            <div class="list_content" id="list_content" style="display:none">
+                <p>Count Li:
+                    <input type="text" id="count_li" placeholder="Count Li:">
+                </p>
+                <p>Type of marks:
+                    <select name="Type_of_marks" id="type_marks">
+                        <option value="circle">circle</option>
+                        <option value="disc"> disc</option>
+                        <option value="square">square</option>
+                        <option value="georgian">georgian</option>
+                    </select>
+                </p>
+                <input type="button" value="Create list" id="create_list">
+            </div>
+        </div>
+
+        <div class="box_style" id="box_style" style="display:none">
+            <form name="form_radio">
+                <div class="box2">
+                    <p>Font size</p>
+                    <input type="radio" value='12px' name="rad" id="raf">12
+                    <input type="radio" value='14px' name="rad" id="raf">14
+                    <input type="radio" value='16px' name="rad" id="raf" checked>16
+                    <input type="radio" value='18px' name="rad" id="raf">18
+                    <input type="radio" value='20px' name="rad" id="raf">20
+                </div>
+            </form>
+            <form name="ption">
+                <p>Font family</p>
+                <select value="option" id="option">
+                    <option value="autofocus">Coose option </option>
+                    <option value="cursive" name="option">cursive</option>
+                    <option value="fantasy" name="option">fantasy</option>
+                    <option value="monospace" name="option">monospace</option>
+                    <option value="sans-serif" name="option">sans-serif</option>
+                </select>
+            </form>
+            <form name="form_select">
+                <input type="button" value="text-color" id="text-color">
+                <input type="button" value="background-color" id="background-color">
+                <div class="Box" id="box_appear">
+                    <div class="box" name="box" id="box_color" style="background-color: lightseagreen; "></div>
+                    <div class="box" name="box" id="box_color" style="background-color: maroon;"></div>
+                    <div class="box" name="box" id="box_color" style="background-color: mediumseagreen;"></div>
+                    <div class="box" name="box" id="box_color" style="background-color: limegreen;"></div>
+                    <div class="box" name="box" id="box_color" style="background-color: slategray;"></div>
+                    <div class="box" name="box" id="box_color" style="background-color: red;"></div>
+                    <div class="box" name="box" id="box_color" style="background-color: royalblue;"></div>
+                    <div class="box" name="box" id="box_color" style="background-color: purple;"></div>
+                    <div class="box" name="box" id="box_color" style="background-color: olive;"> </div>
+                </div>
+            </form>
+            <p>Font style</p>
+            <form name='form_style'>
+                <input type="checkbox" name="radio_style1" id="radio_style1" value="bold">Bold text
+                <input type="checkbox" name="radio_style1" id="radio_style2" value="italic">Cursive text
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
