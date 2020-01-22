@@ -1,0 +1,74 @@
+.block1 {
+    margin: 0 auto;
+    width: 1000px;
+    height: 250px;
+    background-color: rgb(137, 187, 187);
+    padding-left: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+}
+
+.block2 {
+    margin: 0 auto;
+    width: 1000px;
+    height: 250px;
+    background-color: rgb(137, 187, 187);
+    position: relative;
+    border-radius: 10px;
+  
+}
+
+textarea[name="texta"] {
+    margin-left: 100px;
+    width: 700px;
+    height: 200px;
+}
+
+form[name="f1"] {
+    margin-left: 700px;
+}
+
+select {
+    width: 195px;
+    height: 25px;
+}
+
+.Box {
+    width: 200px;
+    height: 200px;
+    display: none;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: absolute;
+    left: 500px;
+    top: 20px;
+    background-color: black;
+}
+
+.box {
+    width: 64.5px;
+    height: 64.5px;
+    border: 1px solid black;
+    font-weight: unset;
+}
+
+.content_add {
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(137, 187, 187);
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr {
+    text-align: center;
+
+}
